@@ -1,0 +1,11 @@
+#line 1 "device/lineage/sepolicy/common/dynamic/service_contexts"
+vendor.lineage.health.IChargingControl/default        u:object_r:hal_lineage_health_service:s0
+#line 1 "device/mediatek/sepolicy_vndr/bsp/non_plat/service_contexts"
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+android.hardware.neuralnetworks.IDevice/mtk-gpu_shim    u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-dsp_shim    u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-mdla_shim   u:object_r:hal_neuralnetworks_service:s0
+android.hardware.neuralnetworks.IDevice/mtk-neuron_shim u:object_r:hal_neuralnetworks_service:s0
