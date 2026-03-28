@@ -1,0 +1,4 @@
+service wg-service /system_ext/bin/wg-service
+    class late_start
+    user root
+    group root system

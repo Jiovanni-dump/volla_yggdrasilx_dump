@@ -1,0 +1,14 @@
+####################################
+# from variable ADDITIONAL_PRODUCT_PROPERTIES
+####################################
+ro.build.characteristics=default
+####################################
+# from variable PRODUCT_PRODUCT_PROPERTIES
+####################################
+ro.config.ringtone=volla_ringtone.ogg
+ro.config.notification_sound=volla_notification.ogg
+ro.config.alarm_alert=volla_alarm.ogg
+ro.support_one_handed_mode=true
+# Auto-added by post_process_props.py
+persist.sys.usb.config=none
+# end of file

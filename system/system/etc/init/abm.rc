@@ -1,0 +1,30 @@
+on post-fs-data
+    mkdir /data/abm 0770 root system
+    mkdir /data/abm/bootset 0770 root system
+    mkdir /data/misc/abm_tmp 0770 root system
+    mkdir /data/misc/abm_tmp/.abm_bootset 0770 system system
+    mkdir /data/unencrypted/abm 0770 system system
+
+on property:sys.volla.abm_mount=mmcblk1
+    mount ext4 /dev/block/mmcblk1p1 /data/abm/bootset rw context=u:object_r:abm_file:s0
+    chown root system /data/abm/bootset
+    chmod 0770 /data/abm/bootset
+    setprop sys.volla.abm_mount 0
+
+on property:sys.volla.abm_mount=mmcblk0
+    mount ext4 /dev/block/mmcblk0p1 /data/abm/bootset rw context=u:object_r:abm_file:s0
+    chown root system /data/abm/bootset
+    chmod 0770 /data/abm/bootset
+    setprop sys.volla.abm_mount 0
+
+on property:sys.volla.abm_umount=1
+    umount /data/abm/bootset
+    setprop sys.volla.abm_umount 0
+
+on property:sys.volla.rereadpt=mmcblk1
+    exec - root -- /system/bin/blockdev --rereadpt /dev/block/mmcblk1
+    setprop sys.volla.rereadpt 0
+
+on property:sys.volla.rereadpt=mmcblk0
+    exec - root -- /system/bin/blockdev --rereadpt /dev/block/mmcblk0
+    setprop sys.volla.rereadpt 0
