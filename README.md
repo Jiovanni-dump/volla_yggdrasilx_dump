@@ -1,0 +1,14 @@
+# yggdrasilx-user 12 SQ3A.220705.004 168-volla-12.1 release-keys
+- manufacturer: volla
+- platform: mt6763
+- codename: yggdrasilx
+- flavor: yggdrasilx-user
+- release: 12
+- id: SQ3A.220705.004
+- incremental: 168-volla-12.1
+- tags: release-keys
+- fingerprint: volla/yggdrasilx/yggdrasilx:12/SQ3A.220705.004/168-volla-12.1:user/release-keys
+- is_ab: false
+- brand: volla
+- branch: yggdrasilx-user-12-SQ3A.220705.004-168-volla-12.1-release-keys
+- repo: volla_yggdrasilx_dump

@@ -1,0 +1,4 @@
+system/system/app/hideme.android.vpn.noPlayStore-Stub/hideme.android.vpn.noPlayStore-Stub.apk.zst
+system/system/app/org.mozilla.fennec_fdroid-Stub/org.mozilla.fennec_fdroid-Stub.apk.zst
+system/system/priv-app/com.google.android.gms/com.google.android.gms.apk.zst
+system/system/product/app/webview/webview.apk.zst
